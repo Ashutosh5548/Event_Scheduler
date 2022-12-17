@@ -14,7 +14,7 @@ class _NewEventScreen extends State<NewEventScreen>{
       title: Text("New Event"),
     ),
 
-      backgroundColor: Colors.deepblue[200],
+      backgroundColor: Colors.deepPurple[200],
 
       body: Column(
 
@@ -24,6 +24,8 @@ class _NewEventScreen extends State<NewEventScreen>{
             height:70, //height of button
             width:350, //width of button
             child: TextField(
+              keyboardType: TextInputType.multiline,
+              maxLines: null,
               decoration: InputDecoration(
                   labelText: "Event",
                   labelStyle: TextStyle(color: Colors.white),
